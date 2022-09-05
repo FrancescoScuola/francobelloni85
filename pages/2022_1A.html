@@ -24,16 +24,105 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script>
+
+        var question_template =
+            "<div class='module-sub-item p-3'>" +
+            "   <div class='row justify-content-between'>" +
+            "       <div class='col-9'>" +
+            "           <span class='theme-text-secondary me-2'>-</span>Module Lorem Ipsum" +
+            "       </div>" +
+            "       <div class='col-3 text-end extra-info'>B</div>" +
+            "   </div>" +
+            "</div>";
+
+        var template_box =
+            // Open Template
+            "<div class='module-item card'>" +
+
+            // Title
+            "   <div class='module-header card-header' id = 'module-heading-{lesson_id}' >"+
+            "    <h4 class='module-title mb-0'> " +
+            "        <a class='card-toggle module-toggle' href='#module-{lesson_id}' data-bs-toggle='collapse' data-bs-target='#module-{lesson_id}' aria-expanded='true' aria-controls='module-{lesson_id}'> " +
+            "            <i class='module-toggle-icon fas fa-plus me-2'></i>" +
+            "            {lesson_title} - {lesson_date}" +
+            "        </a>" +
+            "    </h4>" +
+            "   </div>" +
+            
+            // Open Modulo collapse
+            "   <div id = 'module-{lesson_id}' class='module-content collapse' aria-labelledby='module-heading-{lesson_id}' >" +
+
+            // Open card 
+            "       <div class='card-body p-0'>" +
+
+            // Text
+            "           <div class='module-intro p-3'>" +
+            "               {lesson_text}" +
+            "           </div>" +
+            
+            "           <br><br>" +
+
+            // Question title
+            "           <div class='module-intro p-3'>Domande della lezione:</div>" +
+
+            // Questions
+            "           <div class='module-sub-item p-3'>" +
+            "                <div class='row justify-content-between'>" +
+            "                   <div class='col-9'>" +
+            "                       <span class='theme-text-secondary me-2'>-</span>Module Lorem Ipsum" +
+            "                   </div>" +
+            "                   <div class='col-3 text-end extra-info'>A</div>" +
+            "               </div>" +
+            "           </div>" +
+                
+
+               
+            // Close card
+            "       </div>" +
+
+            // Close Modulo collapse
+            "   </div>" +
+
+            // Close Template
+            "</div>";
+
+
         $(document).ready(function () {
             $("button").click(function (event) {
                 try {
                     console.log("Click!");
-                    $.getJSON('https://francobelloni85.github.io/francobelloni85/data/2022_1AE.json', function (data, status) {
+
+                    $.getJSON('https://francobelloni85.github.io/francobelloni85/data/intro_classi_prime.html', function (data, status) {
+                        console.log("prova a leggere html");
                         console.log(data);
-                        $('#js').append('<h3> The json data details is : </h3>');
-                        $('#js').append('<p> Date : ' + data.lessons[0].text + '</p>');
-                        $('#js').append('<p> The request status is : ' + status + '</p>');
                     });
+
+                    $.getJSON('https://francobelloni85.github.io/francobelloni85/data/2022_1AE.json', function (data, status) {
+
+                        var count = Object.keys(data.lessons).length;
+                        console.log("ci sono " + count  + " lezioni");
+
+                        for (let i = 0; i < count; i++) {
+
+                            let text = template_box;
+                            
+                            text = text.replace("{lesson_title}", "Title");
+                            text = text.replace("{lesson_date}", "Data");
+                            text = text.replace("{lesson_text}", "Text");
+                            text = text.replaceAll("{lesson_id}", ""+i);
+
+                            console.log("Lezione " + i);
+
+                            $('#js').append(text);
+                            //$('#js').append('<h3> Lesson '+ data.lessons[i].text +' </h3>');
+                            //$('#js').append('<p> Date : ' + data.lessons[i].questions + '</p>');
+                            //$('#js').append('<p> The request status is : ' + status + '</p>');
+
+                        }
+
+                      
+                    });
+
                 } catch (ex) {
                     console.log(ex);
                 }
@@ -46,7 +135,7 @@
 
 <body>
 
-    <div id="js" style="background-color : lightblue;"> </div>
+    
     <button> Click to read json data </button>
 
     <header class="header">
@@ -81,163 +170,24 @@
 
             <div id="section-content" class="section-content section">
                 <div class="container py-5">
-                    <div class="section-col-max mx-auto">
-                        <h3 class="section-title mb-5">Lezioni</h3>
 
+                    <h3 class="section-title mb-5">Lezioni</h3>
 
-                        <div class="accordion module-accordion" id="module-accordion">
-                            <div class="module-item card">
-                                <div class="module-header card-header" id="module-heading-1">
-                                    <h4 class="module-title mb-0">
-                                        <a class="card-toggle module-toggle" href="#module-1" data-bs-toggle="collapse"
-                                           data-bs-target="#module-1" aria-expanded="true" aria-controls="module-1">
-                                            <i class="module-toggle-icon fas fa-plus me-2"></i>
-                                            12/09/2022
-                                        </a>
-                                    </h4>
-                                </div>
-                                <!--//card-header-->
-
-                                <div id="module-1" class="module-content collapse"
-                                     aria-labelledby="module-heading-1">
-                                    <div class="card-body p-0">
-                                        <div class="module-intro p-3">
-                                            In questa lezione vediamo cosa sono le variabili.
-                                        </div>
-
-                                        <div class="module-intro p-3">Qui ci sono .... </div>
-
-                                        <br><br>
-
-                                        <div class="module-intro p-3">Domande della lezione:</div>
-
-                                        <div class="module-sub-item p-3">
-                                            <div class="row justify-content-between">
-                                                <div class="col-9">
-                                                    <span class="theme-text-secondary me-2">-</span>Module Lorem Ipsum
-                                                </div>
-                                                <div class="col-3 text-end extra-info">A</div>
-                                            </div>
-                                        </div>
-                                        <!--//module-sub-item-->
-                                        <div class="module-sub-item p-3">
-                                            <div class="row justify-content-between">
-                                                <div class="col-9">
-                                                    <span class="theme-text-secondary me-2">-</span>Module Lorem Ipsum
-                                                </div>
-                                                <div class="col-3 text-end extra-info">B</div>
-                                            </div>
-                                        </div>
-                                        <!--//module-sub-item-->
-                                        <div class="module-sub-item p-3">
-                                            <div class="row justify-content-between">
-                                                <div class="col-9">
-                                                    <span class="theme-text-secondary me-2">-</span>Module Suscipit Arcu
-                                                </div>
-                                                <div class="col-3 text-end extra-info">C</div>
-                                            </div>
-                                        </div>
-                                        <!--//module-sub-item-->
-                                        <div class="module-sub-item p-3">
-                                            <div class="row justify-content-between">
-                                                <div class="col-9">
-                                                    <span class="theme-text-secondary me-2">-</span>Module Suspendisse
-                                                    Porttitor
-                                                </div>
-                                                <div class="col-3 text-end extra-info">C</div>
-                                            </div>
-                                        </div>
-                                        <!--//module-sub-item-->
-                                        <div class="module-sub-item p-3">
-                                            <div class="row justify-content-between">
-                                                <div class="col-9">
-                                                    <span class="theme-text-secondary me-2">-</span>Module Related
-                                                    Resources
-                                                </div>
-                                                <div class="col-3 text-end extra-info">
-                                                    <span class="icon dripicons-download me-2"></span>D
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!--//module-sub-item-->
-
-                                    </div>
-                                    <!--//card-body-->
-                                </div>
-                                <!--//module-content-->
-                            </div>
-                            <!--//module-item-->
-
-                            <div class="module-item card">
-                                <div class="module-header card-header" id="module-heading-2">
-                                    <h4 class="module-title mb-0">
-                                        <a class="card-toggle module-toggle" href="#module-2" data-bs-toggle="collapse"
-                                           data-bs-target="#module-2" aria-expanded="true" aria-controls="module-2">
-                                            <i class="module-toggle-icon fas fa-plus me-2"></i>
-                                            13/09/2022
-                                        </a>
-                                    </h4>
-                                </div>
-                                <!--//card-header-->
-
-                                <div id="module-2" class="module-content collapse" aria-labelledby="module-heading-2">
-                                    <div class="card-body p-0">
-                                        <div class="module-sub-item p-3">
-                                            <div class="row justify-content-between">
-                                                <div class="col-9">
-                                                    <span class="theme-text-secondary me-2">2.1</span>Module Intro Video
-                                                </div>
-                                                <div class="col-3 text-end extra-info">02:30</div>
-                                            </div>
-                                        </div>
-                                        <!--//module-sub-item-->
-                                        <div class="module-sub-item p-3">
-                                            <div class="row justify-content-between">
-                                                <div class="col-9">
-                                                    <span class="theme-text-secondary me-2">2.2</span>Module Lorem Ipsum
-                                                </div>
-                                                <div class="col-3 text-end extra-info">15:20</div>
-                                            </div>
-                                        </div>
-                                        <!--//module-sub-item-->
-                                        <div class="module-sub-item p-3">
-                                            <div class="row justify-content-between">
-                                                <div class="col-9">
-                                                    <span class="theme-text-secondary me-2">2.3</span>Module Suscipit Arcu
-                                                </div>
-                                                <div class="col-3 text-end extra-info">23:15</div>
-                                            </div>
-                                        </div>
-                                        <!--//module-sub-item-->
-
-                                    </div>
-                                    <!--//card-body-->
-                                </div>
-                                <!--//module-content-->
-                            </div>
-                            <!--//module-item-->
-
-                        </div>
-                        <!--//module-accordion-->
-
+                    <div class="accordion module-accordion" id="module-accordion">
+                        <div id="js" style="background-color : lightblue;"> </div>
                     </div>
-
+                    
                     <br>
 
                     <div class="text-center mt-5">
                         <a class="btn btn-primary scrollto" href="../index.html">Indietro</a>
                     </div>
-
-
                 </div>
-
                 <!--//container-->
             </div>
             <!--//section-content-->
-
         </div>
         <!--//sections-block-->
-
     </div>
     <!--//section-wrapper-->
 
