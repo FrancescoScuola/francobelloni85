@@ -23,15 +23,21 @@
     <link id="theme-style" rel="stylesheet" href="../assets/css/theme.css">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
     <script>
+
+        var url_json_database_folder = "https://francobelloni85.github.io/francobelloni85/data/"
+
+        var json_lesson_response = {};
+        var status_fetch = false;
 
         var question_template =
             "<div class='module-sub-item p-3'>" +
             "   <div class='row justify-content-between'>" +
             "       <div class='col-9'>" +
-            "           <span class='theme-text-secondary me-2'>-</span>Module Lorem Ipsum" +
+            "           <span class='theme-text-secondary me-2'>-</span>{question_text}" +
             "       </div>" +
-            "       <div class='col-3 text-end extra-info'>B</div>" +
+            "       <div class='col-3 text-end extra-info'>{question_number}</div>" +
             "   </div>" +
             "</div>";
 
@@ -40,43 +46,36 @@
             "<div class='module-item card'>" +
 
             // Title
-            "   <div class='module-header card-header' id = 'module-heading-{lesson_id}' >"+
+            "   <div class='module-header card-header' id='module-heading-{lesson_id}' onclick='LoadLessionClick({lesson_id})' >" +
             "    <h4 class='module-title mb-0'> " +
             "        <a class='card-toggle module-toggle' href='#module-{lesson_id}' data-bs-toggle='collapse' data-bs-target='#module-{lesson_id}' aria-expanded='true' aria-controls='module-{lesson_id}'> " +
             "            <i class='module-toggle-icon fas fa-plus me-2'></i>" +
-            "            {lesson_title} - {lesson_date}" +
+            "             {lesson_date} - {lesson_title}" +
             "        </a>" +
             "    </h4>" +
             "   </div>" +
-            
+
             // Open Modulo collapse
             "   <div id = 'module-{lesson_id}' class='module-content collapse' aria-labelledby='module-heading-{lesson_id}' >" +
 
-            // Open card 
+            // Open card
             "       <div class='card-body p-0'>" +
 
             // Text
-            "           <div class='module-intro p-3'>" +
-            "               {lesson_text}" +
+            "           <div class='module-intro p-3' id={id_lesson_text}>" +
+            "               loading ... " +
             "           </div>" +
-            
+
             "           <br><br>" +
 
             // Question title
-            "           <div class='module-intro p-3'>Domande della lezione:</div>" +
+            "           <div class='module-intro p-3'><i>Domande della lezione:</i></div>" +
 
             // Questions
-            "           <div class='module-sub-item p-3'>" +
-            "                <div class='row justify-content-between'>" +
-            "                   <div class='col-9'>" +
-            "                       <span class='theme-text-secondary me-2'>-</span>Module Lorem Ipsum" +
-            "                   </div>" +
-            "                   <div class='col-3 text-end extra-info'>A</div>" +
-            "               </div>" +
+            "           <div id={id_lesson_questions}>" +
+            "               loading ... " +
             "           </div>" +
-                
 
-               
             // Close card
             "       </div>" +
 
@@ -86,83 +85,31 @@
             // Close Template
             "</div>";
 
-
-        $(document).ready(function () {
-            $("button").click(function (event) {
-                try {
-                    console.log("Click!");
-
-                    $.getJSON('https://francobelloni85.github.io/francobelloni85/data/intro_classi_prime.html', function (data, status) {
-                        console.log("prova a leggere html");
-                        console.log(data);
-                    });
-
-                    $.getJSON('https://francobelloni85.github.io/francobelloni85/data/2022_1AE.json', function (data, status) {
-
-                        var count = Object.keys(data.lessons).length;
-                        console.log("ci sono " + count  + " lezioni");
-
-                        for (let i = 0; i < count; i++) {
-
-                            let text = template_box;
-                            
-                            text = text.replace("{lesson_title}", "Title");
-                            text = text.replace("{lesson_date}", "Data");
-                            text = text.replace("{lesson_text}", "Text");
-                            text = text.replaceAll("{lesson_id}", ""+i);
-
-                            console.log("Lezione " + i);
-
-                            $('#js').append(text);
-                            //$('#js').append('<h3> Lesson '+ data.lessons[i].text +' </h3>');
-                            //$('#js').append('<p> Date : ' + data.lessons[i].questions + '</p>');
-                            //$('#js').append('<p> The request status is : ' + status + '</p>');
-
-                        }
-
-                      
-                    });
-
-                } catch (ex) {
-                    console.log(ex);
-                }
-
-            });
-        });
     </script>
 
 </head>
 
 <body>
 
-    
-    <button> Click to read json data </button>
-
     <header class="header">
         <section class="hero-section">
             <div class="hero-mask">
             </div>
-            <!--//hero-mask-->
             <div class="container text-center py-5">
                 <div class="single-col-max mx-auto">
 
                     <h1 class="hero-heading mb-5">
                         <span class="brand mb-4 d-block">
-                            <span class="text-highlight pr-2">{</span><span class="name">
-                                1
-                                A
-                            </span><span class="text-highlight pl-2">}</span>
+                            <span class="text-highlight pr-2">{</span>
+                            <span class="name">1A</span>
+                            <span class="text-highlight pl-2">}</span>
                         </span>
                         <span class="desc d-block">Informatica</span>
                     </h1>
                 </div>
-                <!--//single-col-max-->
             </div>
-            <!--//container-->
         </section>
-        <!--//hero-section-->
     </header>
-    <!--//header-->
 
     <div class="sections-wrapper">
 
@@ -174,22 +121,20 @@
                     <h3 class="section-title mb-5">Lezioni</h3>
 
                     <div class="accordion module-accordion" id="module-accordion">
-                        <div id="js" style="background-color : lightblue;"> </div>
+                        <div id="js"></div>
                     </div>
-                    
+
                     <br>
 
                     <div class="text-center mt-5">
                         <a class="btn btn-primary scrollto" href="../index.html">Indietro</a>
                     </div>
                 </div>
-                <!--//container-->
+
             </div>
-            <!--//section-content-->
         </div>
-        <!--//sections-block-->
     </div>
-    <!--//section-wrapper-->
+
 
     <footer class="footer pb-5 text-center">
         <div class="container">
@@ -209,13 +154,136 @@
                 </ul>
             </div>
         </div>
-        <!--//container-->
     </footer>
-    <!--//footer-->
+
+
     <!-- Javascript -->
     <script src="../assets/plugins/popper.min.js"></script>
     <script src="../assets/plugins/bootstrap/js/bootstrap.min.js"></script>
     <script src="../assets/js/main.js"></script>
+
+    <script>
+
+        // TODO avoid to fetch data already loaded....
+        // TODO mostrare errore se c'è qualcosa che non va
+        // TODO caricare dall'url la classe.
+
+
+        // Load the lession text
+        function LoadLessonText(index_lesson, file_name) {
+            var url_to_fetch = url_json_database_folder + file_name;
+            console.log("url_to_fetch=" + url_to_fetch);
+            var id_text = "#lesson_text_" + index_lesson;
+
+            $.ajax({
+                url: url_to_fetch, async: true, success: function (output) {
+                    console.log("loading text ...");
+                    $(id_text).html(output);
+                }
+            });
+        }
+
+        // Load questions
+        function LoadQuestions(index_lesson, file_name) {
+            var url_to_fetch = url_json_database_folder + file_name;
+            console.log("url_to_fetch=" + url_to_fetch);
+            var id_question = "#lesson_questions_" + index_lesson;
+            $(id_question).text("");
+
+            $.getJSON(url_to_fetch, function (data, status) {
+
+                console.log("Fetch lession status is: " + status);
+
+                var count = Object.keys(data.questions).length;
+                console.log("ci sono " + count + " questions");
+
+                for (let i = 0; i < count; i++) {
+
+                    let text = question_template;
+
+                    text = text.replace("{question_text}", "Question");
+
+                    // where n is 0, 1, 2 ...
+                    var chr = String.fromCharCode(65 + i);
+                    text = text.replace("{question_number}", chr);
+
+                    $(id_question).append(text);
+
+                }
+            });
+
+        }
+
+
+        // Load all the lessions
+
+        $(document).ready(function () {
+
+
+            try {
+
+                console.log("loading resources with getJSON");
+
+                $.getJSON('https://francobelloni85.github.io/francobelloni85/data/2022_1AE.json', function (data, status) {
+
+                    json_lesson_response = data;
+
+                    status_fetch = status;
+
+                    var count = Object.keys(data.lessons).length;
+                    console.log("ci sono " + count + " lezioni");
+
+                    for (let i = 0; i < count; i++) {
+
+                        let text = template_box;
+
+                        text = text.replaceAll("{lesson_id}", "" + i);
+
+                        text = text.replace("{lesson_title}", json_lesson_response.lessons[i].title);
+                        text = text.replace("{lesson_date}", json_lesson_response.lessons[i].date);
+
+                        text = text.replaceAll("{id_lesson_text}", "lesson_text_" + i);
+                        text = text.replace("{id_lesson_questions}", "lesson_questions_" + i);
+
+                        console.log("Lezione " + i);
+
+                        $('#js').append(text);
+
+                    }
+                });
+
+            } catch (ex) {
+                console.log(ex);
+            }
+
+
+        });
+
+        function LoadLessionClick(index_lesson) {
+
+            try {
+                console.log("click on " + index_lesson);
+
+
+
+                // Text
+                var text_file_name = json_lesson_response.lessons[index_lesson].text;
+                console.log("loading text " + text_file_name + "....");
+                LoadLessonText(index_lesson, text_file_name);
+
+                // Questions
+                var question_file_name = json_lesson_response.lessons[index_lesson].questions;
+                console.log("loading questions " + question_file_name + "....");
+                LoadQuestions(index_lesson, question_file_name);
+
+
+            } catch (ex) {
+                console.log(ex);
+            }
+        }
+
+    </script>
+
 
 </body>
 

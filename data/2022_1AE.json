@@ -2,14 +2,16 @@
   "lessons": [
     {
       "date": "12/09/2022",
-      "title":  "Introduzione",
+      "title": "Introduzione",
       "text": "intro_classi_prime.html",
+      "text_made_by": "francesco",
       "questions": "q_intro_classi_prime.json"
     },
     {
       "date": "13/09/2022",
       "title": "Campi di applicazione dell'informatica",
       "text": "campi_applicazione_informatica.html",
+      "text_made_by": "francesco",
       "questions": "campi_applicazione_informatica.json"
     }
   ]
