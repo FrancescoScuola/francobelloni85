@@ -26,8 +26,13 @@
 
     <script>
 
-        var url_json_database_folder = "https://francobelloni85.github.io/francobelloni85/data/"
+        // Global variables
 
+        let my_grade = "";
+        let my_year = "2022";
+        let my_subject = "Informatica";
+
+        var url_json_database_folder = "https://francobelloni85.github.io/francobelloni85/data/"
         var json_lesson_response = {};
         var status_fetch = false;
 
@@ -59,7 +64,7 @@
             "   <div id = 'module-{lesson_id}' class='module-content collapse' aria-labelledby='module-heading-{lesson_id}' >" +
 
             // Open card
-            "       <div class='card-body p-0'>" +
+            "       <div class='card-body p-0'> <br><br>" +
 
             // Text
             "           <div class='module-intro p-3' id={id_lesson_text}>" +
@@ -101,10 +106,10 @@
                     <h1 class="hero-heading mb-5">
                         <span class="brand mb-4 d-block">
                             <span class="text-highlight pr-2">{</span>
-                            <span class="name">1A</span>
+                            <span id="grade_title" class="name">...</span>
                             <span class="text-highlight pl-2">}</span>
                         </span>
-                        <span class="desc d-block">Informatica</span>
+                        <span id="subject_title" class="desc d-block">...</span>
                     </h1>
                 </div>
             </div>
@@ -166,8 +171,6 @@
 
         // TODO avoid to fetch data already loaded....
         // TODO mostrare errore se c'è qualcosa che non va
-        // TODO caricare dall'url la classe.
-
 
         // Load the lession text
         function LoadLessonText(index_lesson, file_name) {
@@ -186,7 +189,7 @@
         // Load questions
         function LoadQuestions(index_lesson, file_name) {
             var url_to_fetch = url_json_database_folder + file_name;
-            console.log("url_to_fetch=" + url_to_fetch);
+            //console.log("url_to_fetch=" + url_to_fetch);
             var id_question = "#lesson_questions_" + index_lesson;
             $(id_question).text("");
 
@@ -195,13 +198,13 @@
                 console.log("Fetch lession status is: " + status);
 
                 var count = Object.keys(data.questions).length;
-                console.log("ci sono " + count + " questions");
+                //console.log("ci sono " + count + " questions");
 
                 for (let i = 0; i < count; i++) {
 
                     let text = question_template;
 
-                    text = text.replace("{question_text}", "Question");
+                    text = text.replace("{question_text}", data.questions[i].text);
 
                     // where n is 0, 1, 2 ...
                     var chr = String.fromCharCode(65 + i);
@@ -220,18 +223,35 @@
         $(document).ready(function () {
 
 
+            // https://stackoverflow.com/questions/901115/how-can-i-get-query-string-values-in-javascript
+            const params = new Proxy(new URLSearchParams(window.location.search), {
+                get: (searchParams, prop) => searchParams.get(prop),
+            });
+
+            my_grade = params.grade;
+            my_subject = params.subject;
+            my_year = params.year;
+            
+            let file_name_lesson = my_year + "_" + my_grade + ".json"
+            let url_file_name_lesson = url_json_database_folder + file_name_lesson;
+
+            //console.log("load url_file_name_lesson= " + url_file_name_lesson);
+
+            const capitalized = my_subject.charAt(0).toUpperCase() + my_subject.slice(1);
+            $('#grade_title').text(my_grade);
+            $('#subject_title').text(capitalized);
+
             try {
 
-                console.log("loading resources with getJSON");
+                // console.log("loading resources with getJSON");
 
-                $.getJSON('https://francobelloni85.github.io/francobelloni85/data/2022_1AE.json', function (data, status) {
+                $.getJSON(url_file_name_lesson, function (data, status) {
 
                     json_lesson_response = data;
-
                     status_fetch = status;
 
                     var count = Object.keys(data.lessons).length;
-                    console.log("ci sono " + count + " lezioni");
+                    // console.log("ci sono " + count + " lezioni");
 
                     for (let i = 0; i < count; i++) {
 
@@ -245,7 +265,7 @@
                         text = text.replaceAll("{id_lesson_text}", "lesson_text_" + i);
                         text = text.replace("{id_lesson_questions}", "lesson_questions_" + i);
 
-                        console.log("Lezione " + i);
+                        // console.log("Load lezione " + i);
 
                         $('#js').append(text);
 
@@ -256,15 +276,12 @@
                 console.log(ex);
             }
 
-
         });
 
         function LoadLessionClick(index_lesson) {
 
             try {
                 console.log("click on " + index_lesson);
-
-
 
                 // Text
                 var text_file_name = json_lesson_response.lessons[index_lesson].text;
