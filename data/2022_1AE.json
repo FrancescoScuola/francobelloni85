@@ -3,16 +3,16 @@
     {
       "date": "12/09/2022",
       "title": "Introduzione",
-      "text": "intro_classi_prime.html",
+      "text": "1_introduzione.html",
       "text_made_by": "francesco",
-      "questions": "q_intro_classi_prime.json"
+      "questions": "1_introduzione_questions.json"
     },
     {
       "date": "13/09/2022",
       "title": "Campi di applicazione dell'informatica",
-      "text": "campi_applicazione_informatica.html",
+      "text": "2_informatica_e_i_suoi_strumenti.html",
       "text_made_by": "francesco",
-      "questions": "campi_applicazione_informatica.json"
+      "questions": "2_informatica_e_i_suoi_strumenti_questions.json"
     }
   ]
 }  
