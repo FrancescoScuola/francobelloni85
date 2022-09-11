@@ -1,10 +1,10 @@
 {
   "questions": [
     {
-      "text": "Test domanda 1"
+      "text": "Descrivi cosa c'&egrave; nella fase di analisi +<br />Fai l'analisi del seguente problema: determina se il numero in ingresso &egrave; pari o dispari."
     },
     {
-      "text": "Test domanda 2"
+      "text": "Cosa &egrave; un programma? Quali sono i suoi input ed output. Fai un esempio di programma. + <br />Fai l'analisi del seguente problema: determina tra 2 nomi (lunghi 3 caratteri) quello che viene prima in ordine alfabetico"
     }
   ]
 } 
