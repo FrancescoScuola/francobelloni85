@@ -1,10 +1,19 @@
 {
   "questions": [
     {
-      "text": "Test domanda 1"
+      "text": "Cos'&egrave; un programma? Cosa fa il computer quando 'eseguire il programma?'"
     },
     {
-      "text": "Test domanda 2"
+      "text": "Cosa significa che il pc &egrave; general purpose? Quante tipologie di pc ci sono."
+    },
+    {
+      "text": "Quali sono i blocchi funzionali di un sistema (John von Neu-mann)?"
+    },
+    {
+      "text": "Descrivi brevemente la CPU"
+    },
+    {
+      "text": "Quali tipi di memoria ci sono? Descrivile. Come mai non si usa solo la chache?"
     }
   ]
 } 
