@@ -13,6 +13,13 @@
       "text": "2_introduzione_ai_sistemi.html",
       "text_made_by": "francesco",
       "questions": "2_introduzione_ai_sistemi_questions.json"
+    },
+    {
+      "date": "17/09/2022",
+      "title": "Automa a stati finiti",
+      "text": "3_automa_a_stati_finiti.html",
+      "text_made_by": "francesco",
+      "questions": "3_automa_a_stati_finiti_questions.json"
     }
   ]
-}  
+}
