@@ -1,0 +1,10 @@
+{
+  "questions": [
+    {
+      "text": "Cos'&egrave; una variabile? Assegna alla variabile x il valore 4;<p>quanto risulta x alla fine di queste operazioni.<br />x = 3<br />y = 4<br />x = x + 1<br />x = y + x</p>"
+    },
+    {
+      "text": "Scrivi le formule per: <br />1) Assegna il valore 3 alla variabile x. <br />2) Assegna il valore della variabile y ad x. <br />3) Incrementa il valore di x di 2. <br />4) Modifica il valore di una varibile sommando il valore di y. <br />5) Scambia il valore di due variabili (x e y). <br />Fai anche degli esempi con i numeri."
+    }
+  ]
+} 

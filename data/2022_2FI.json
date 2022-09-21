@@ -13,6 +13,13 @@
       "text": "2_introduzione_alla_programmazione.html",
       "text_made_by": "francesco",
       "questions": "2_introduzione_alla_programmazione_questions.json"
+    },
+    {
+      "date": "21/09/2022",
+      "title": "le variabili",
+      "text": "3_le_variabili.html",
+      "text_made_by": "francesco",
+      "questions": "3_le_variabili_questions.json"
     }
   ]
 }  
