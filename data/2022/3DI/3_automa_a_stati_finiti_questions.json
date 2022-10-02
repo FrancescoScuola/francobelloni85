@@ -6,8 +6,5 @@
     {
         "text": "<em>Definisci I, S, diagramma delle transizioni oppure il suo grafico di questo sistema: </em>Il sistema &egrave; costituito da 3 lampadine (L1, L2, L3) comandate da un pulsante P. Premendo P, se L1, L2, L3 sono spente, si accende L1. Una successiva pressione di P, accende L2 e spegne L1. Poi si accende L3 e si spegne L2. Premuto ancora il punsate di spengono tutte le luci."
     }
-
-
-
   ]
 } 
