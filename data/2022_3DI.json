@@ -59,9 +59,9 @@
     {
       "date": "...",
       "title": "Registers and RAM",
-      "text": "9_RegistersAndRAM.html",
+      "text": "9_Registers_RAM.html",
       "text_made_by": "francesco",
-      "questions": "9_RegistersaAdRAM_questions.json"
+      "questions": "9_Registers_RAM_questions.json"
     }
   ]
 }
