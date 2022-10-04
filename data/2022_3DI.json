@@ -55,6 +55,13 @@
       "text": "8_ALU.html",
       "text_made_by": "francesco",
       "questions": "8_ALU_questions.json"
+    },
+    {
+      "date": "...",
+      "title": "Registers and RAM",
+      "text": "9_RegistersAndRAM.html",
+      "text_made_by": "francesco",
+      "questions": "9_RegistersaAdRAM_questions.json"
     }
   ]
 }
