@@ -62,6 +62,13 @@
       "text": "9_Registers_RAM.html",
       "text_made_by": "francesco",
       "questions": "9_Registers_RAM_questions.json"
+    },
+    {
+      "date": "30/01/2022",
+      "title": "Le evoluzioni della memoria centrale",
+      "text": "10_LeEvoluzioniDellaMemoriaCentrale.html",
+      "text_made_by": "francesco",
+      "questions": "10_LeEvoluzioniDellaMemoriaCentrale.json"
     }
   ]
 }
