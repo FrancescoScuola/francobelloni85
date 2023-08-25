@@ -1,0 +1,46 @@
+{
+  "students": [
+    {
+      "Name": "Paolino",
+      "Surname": "Paperino",
+      "Id": 1
+    },
+    {
+      "Name": "Donal",
+      "Surname": "Duck",
+      "Id": 2
+    },
+    {
+      "Name": "Banda",
+      "Surname": "Bassotti",
+      "Id": 3
+    },
+    {
+      "Name": "879-716",
+      "Surname": "Bassotti",
+      "Id": 4
+    }
+  ],
+  "matchs": [
+    {
+      "student1_id": 2,
+      "question1": "Quale è il rapporto tra rumore e segnale",
+      "score_1": 15,
+      "student2_id": 4,
+      "question2": "Fammi un esempio di attenuazione",
+      "score_2": 4,
+      "winner": 4,
+      "date": "28/08/2023"
+    },
+    {
+      "student1_id": 1,
+      "question1": "Quale è il rapporto tra rumore e segnale",
+      "score_1": 11,
+      "student2_id": 2,
+      "question2": "Fammi un esempio di attenuazione",
+      "score_2": 10,
+      "winner": 1,
+      "date": "29/08/2023"
+    }
+  ]
+}
