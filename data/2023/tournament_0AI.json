@@ -1,26 +1,102 @@
 {
   "students": [
     {
-      "Name": "Paolino",
-      "Surname": "Paperino",
+      "Nome": "Topolino",
+      "Cognome": "Mouse",
       "Id": 1
     },
     {
-      "Name": "Donal",
-      "Surname": "Duck",
+      "Nome": "Paperino",
+      "Cognome": "",
       "Id": 2
     },
     {
-      "Name": "Banda",
-      "Surname": "Bassotti",
+      "Nome": "Pippo",
+      "Cognome": "Goofy",
       "Id": 3
     },
     {
-      "Name": "879-716",
-      "Surname": "Bassotti",
+      "Nome": "Minni",
+      "Cognome": "Mouse",
       "Id": 4
+    },
+    {
+      "Nome": "Paperina",
+      "Cognome": "Duck",
+      "Id": 5
+    },
+    {
+      "Nome": "Pluto",
+      "Cognome": "Pluto",
+      "Id": 6
+    },
+    {
+      "Nome": "Zio Paperone",
+      "Cognome": "McDuck",
+      "Id": 7
+    },
+    {
+      "Nome": "Qui",
+      "Cognome": "",
+      "Id": 8
+    },
+    {
+      "Nome": "Quo",
+      "Cognome": "",
+      "Id": 9
+    },
+    {
+      "Nome": "Qua",
+      "Cognome": "",
+      "Id": 10
+    },
+    {
+      "Nome": "Paperoga",
+      "Cognome": "Beagle",
+      "Id": 11
+    },
+    {
+      "Nome": "Paperon de' Paperoni",
+      "Cognome": "McDuck",
+      "Id": 12
+    },
+    {
+      "Nome": "Archimede",
+      "Cognome": "Archimedes",
+      "Id": 13
+    },
+    {
+      "Nome": "Basettoni",
+      "Cognome": "Beagles",
+      "Id": 14
+    },
+    {
+      "Nome": "Rocky",
+      "Cognome": "Adventurer",
+      "Id": 15
+    },
+    {
+      "Nome": "Penny",
+      "Cognome": "Reporter",
+      "Id": 16
+    },
+    {
+      "Nome": "Gyro",
+      "Cognome": "Gearloose",
+      "Id": 17
+    },
+    {
+      "Nome": "Darkwing",
+      "Cognome": "Duck",
+      "Id": 18
+    },
+    {
+      "Nome": "Gadget",
+      "Cognome": "Inventor",
+      "Id": 19
     }
   ],
+
   "matchs": [
     {
       "student1_id": 2,
@@ -41,6 +117,87 @@
       "score_2": 10,
       "winner": 1,
       "date": "29/08/2023"
+    },
+    {
+      "student1_id": 3,
+      "question1": "Spiega cos'è un algoritmo di ordinamento e fornisci un esempio",
+      "score_1": 0,
+      "student2_id": 4,
+      "question2": "Qual è la differenza tra un linguaggio di programmazione compilato e uno interpretato",
+      "score_2": 0,
+      "winner": null,
+      "date": "30/08/2023"
+    },
+    {
+      "student1_id": 5,
+      "question1": "Cosa significa \"HTTP\" in informatica e qual è il suo ruolo nelle comunicazioni web",
+      "score_1": 0,
+      "student2_id": 6,
+      "question2": "Spiega il concetto di \"cloud computing\"",
+      "score_2": 0,
+      "winner": null,
+      "date": "31/08/2023"
+    },
+    {
+      "student1_id": 7,
+      "question1": "Cos'è un database relazionale e quali sono le sue principali caratteristiche",
+      "score_1": 0,
+      "student2_id": 8,
+      "question2": "Descrivi il funzionamento di un algoritmo di ricerca binaria",
+      "score_2": 0,
+      "winner": null,
+      "date": "01/09/2023"
+    },
+    {
+      "student1_id": 9,
+      "question1": "Spiega il concetto di \"intelligenza artificiale\" e fornisci un esempio di applicazione pratica",
+      "score_1": 0,
+      "student2_id": 10,
+      "question2": "Qual è la differenza tra \"machine learning\" e \"deep learning\"",
+      "score_2": 0,
+      "winner": null,
+      "date": "02/09/2023"
+    },
+    {
+      "student1_id": 11,
+      "question1": "Descrivi il funzionamento di un algoritmo di ricerca lineare e quando è appropriato utilizzarlo",
+      "score_1": 0,
+      "student2_id": 12,
+      "question2": "Cos'è un \"bug\" in programmazione e come possono essere evitati o risolti",
+      "score_2": 0,
+      "winner": null,
+      "date": "03/09/2023"
+    },
+    {
+      "student1_id": 13,
+      "question1": "Spiega il concetto di \"big data\" e quali sfide possono sorgere nella loro gestione",
+      "score_1": 0,
+      "student2_id": 14,
+      "question2": "Qual è la differenza tra un sistema operativo Windows e un sistema operativo Linux",
+      "score_2": 0,
+      "winner": null,
+      "date": "04/09/2023"
+    },
+    {
+      "student1_id": 15,
+      "question1": "Cosa significa \"programmazione orientata agli oggetti\" e come si differenzia dalla programmazione procedurale",
+      "score_1": 0,
+      "student2_id": 16,
+      "question2": "Quali sono le principali minacce alla sicurezza informatica e come possono essere mitigati",
+      "score_2": 0,
+      "winner": null,
+      "date": "05/09/2023"
+    },
+    {
+      "student1_id": 17,
+      "question1": "Descrivi il concetto di \"reti neurali artificiali\" e la loro applicazione in apprendimento automatico",
+      "score_1": 0,
+      "student2_id": 18,
+      "question2": "Qual è il ruolo di un \"data scientist\" nell'analisi dei dati aziendali",
+      "score_2": 0,
+      "winner": null,
+      "date": "06/09/2023"
     }
   ]
+
 }
