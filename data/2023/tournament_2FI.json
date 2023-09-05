@@ -100,17 +100,5 @@
       "Surname": "RIZ",
       "Id": 20
     }
-  ],
-  "matchs": [
-    //{
-    //  "student1_id": 2,
-    //  "question1": "-",
-    //  "score_1": 15,
-    //  "student2_id": 4,
-    //  "question2": "-",
-    //  "score_2": 4,
-    //  "winner": 4,
-    //  "date": "28/08/2023"
-    //}
   ]
 }
