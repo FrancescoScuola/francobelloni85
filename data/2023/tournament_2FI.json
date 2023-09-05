@@ -1,0 +1,116 @@
+{
+  "students": [
+    {
+      "Name": "YOUSEFF",
+      "Surname": "AGU",
+      "Id": 1
+    },
+    {
+      "Name": "PIETER",
+      "Surname": "BIA",
+      "Id": 2
+    },
+    {
+      "Name": "STEPHEN",
+      "Surname": "COL",
+      "Id": 3
+    },
+    {
+      "Name": "ALEXANDER",
+      "Surname": "COS",
+      "Id": 4
+    },
+    {
+      "Name": "GABRIEL",
+      "Surname": "COS",
+      "Id": 5
+    },
+    {
+      "Name": "PETER",
+      "Surname": "DI ",
+      "Id": 6
+    },
+    {
+      "Name": "ALEXANDER",
+      "Surname": "DI ",
+      "Id": 7
+    },
+    {
+      "Name": "ANDREW",
+      "Surname": "FOR",
+      "Id": 8
+    },
+    {
+      "Name": "MANUEL",
+      "Surname": "FRA",
+      "Id": 9
+    },
+    {
+      "Name": "EMANUEL",
+      "Surname": "FRI",
+      "Id": 10
+    },
+    {
+      "Name": "RICHARD",
+      "Surname": "GAN",
+      "Id": 11
+    },
+    {
+      "Name": "MICHAEL",
+      "Surname": "GEN",
+      "Id": 12
+    },
+    {
+      "Name": "SIMON",
+      "Surname": "GHI",
+      "Id": 13
+    },
+    {
+      "Name": "LAWRENCE",
+      "Surname": "GIA",
+      "Id": 14
+    },
+    {
+      "Name": "MATTHEW",
+      "Surname": "IAN",
+      "Id": 15
+    },
+    {
+      "Name": "CHRISTIAN",
+      "Surname": "LON",
+      "Id": 16
+    },
+    {
+      "Name": "GIANLUCA",
+      "Surname": "O'N",
+      "Id": 17
+    },
+    {
+      "Name": "DANIEL",
+      "Surname": "PIG",
+      "Id": 18
+    },
+    {
+      "Name": "ALEXANDER",
+      "Surname": "REG",
+      "Id": 19
+    },
+    {
+      "Name": "RICHARD",
+      "Surname": "RIZ",
+      "Id": 20
+    }
+  ],
+  "matchs": [
+    //{
+    //  "student1_id": 2,
+    //  "question1": "-",
+    //  "score_1": 15,
+    //  "student2_id": 4,
+    //  "question2": "-",
+    //  "score_2": 4,
+    //  "winner": 4,
+    //  "date": "28/08/2023"
+    //}
+  ]
+}
