@@ -1,0 +1,131 @@
+{
+  "students": [
+    {
+      "Name": "Susan",
+      "Surname": "MES",
+      "Id": 1
+    },
+    {
+      "Name": "John",
+      "Surname": "CAR",
+      "Id": 2
+    },
+    {
+      "Name": "David",
+      "Surname": "COZ",
+      "Id": 3
+    },
+    {
+      "Name": "Irene",
+      "Surname": "DE ",
+      "Id": 4
+    },
+    {
+      "Name": "Kevin",
+      "Surname": "DIM",
+      "Id": 5
+    },
+    {
+      "Name": "Francis",
+      "Surname": "FAL",
+      "Id": 6
+    },
+    {
+      "Name": "Robert",
+      "Surname": "FER",
+      "Id": 7
+    },
+    {
+      "Name": "Thomas",
+      "Surname": "FRA",
+      "Id": 8
+    },
+    {
+      "Name": "Leonard",
+      "Surname": "INT",
+      "Id": 9
+    },
+    {
+      "Name": "Alexander",
+      "Surname": "LAM",
+      "Id": 10
+    },
+    {
+      "Name": "Elias",
+      "Surname": "MAR",
+      "Id": 11
+    },
+    {
+      "Name": "Demetrius",
+      "Surname": "MAR",
+      "Id": 12
+    },
+    {
+      "Name": "Philip",
+      "Surname": "MOF",
+      "Id": 13
+    },
+    {
+      "Name": "Francis",
+      "Surname": "NIC",
+      "Id": 14
+    },
+    {
+      "Name": "David",
+      "Surname": "POS",
+      "Id": 15
+    },
+    {
+      "Name": "Andrew",
+      "Surname": "RAI",
+      "Id": 16
+    },
+    {
+      "Name": "Alex",
+      "Surname": "RAN",
+      "Id": 17
+    },
+    {
+      "Name": "Mark",
+      "Surname": "RIG",
+      "Id": 18
+    },
+    {
+      "Name": "Aurora",
+      "Surname": "ROS",
+      "Id": 19
+    },
+    {
+      "Name": "Denis",
+      "Surname": "SMA",
+      "Id": 20
+    },
+    {
+      "Name": "Ishmael",
+      "Surname": "UMA",
+      "Id": 21
+    },
+    {
+      "Name": "Diego",
+      "Surname": "ZAN",
+      "Id": 22
+    },
+    {
+      "Name": "Leonard",
+      "Surname": "ZAV",
+      "Id": 23
+    }
+  ],
+  "matchs": [
+    {
+      "student1_id": 2,
+      "question1": "-",
+      "score_1": 15,
+      "student2_id": 4,
+      "question2": "-",
+      "score_2": 4,
+      "winner": 4,
+      "date": "28/08/2023"
+    }
+  ]
+}

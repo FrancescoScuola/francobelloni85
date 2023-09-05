@@ -1,0 +1,18 @@
+{
+  "lessons": [
+    {
+      "date": "12/09/2023",
+      "title": "Introduzione",
+      "text": "1_introduzione.html",
+      "text_made_by": "francesco",
+      "questions": "1_introduzione_questions.json"
+    },
+    {
+      "date": "15/09/2023",
+      "title": "Campi di applicazione dell'informatica",
+      "text": "2_informatica_e_i_suoi_strumenti.html",
+      "text_made_by": "francesco",
+      "questions": "2_informatica_e_i_suoi_strumenti_questions.json"
+    }
+  ]
+}  
