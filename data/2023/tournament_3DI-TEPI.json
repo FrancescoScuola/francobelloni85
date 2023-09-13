@@ -130,6 +130,17 @@
       "Surname": "SAV",
       "Id": 26
     }
-  ]
-
+  ],
+    "matchs": [
+    {
+      "student1_id": 23,
+      "question1": "Cosa usiamo per evitare l'attenuazione",
+      "score_1": 8,
+      "student2_id": 24,
+      "question2": "Cosa è la larghezza di banda",
+      "score_2": 12,
+      "winner": 24,
+      "date": "13/09/2023"
+    }
+    ]
 }
