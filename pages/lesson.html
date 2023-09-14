@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>Materiale scolastico - sito test</title>
+    <title>Materiale scolastico - lezioni</title>
 
     <!-- Meta -->
     <meta charset="utf-8">
@@ -180,8 +180,8 @@
             my_subject = params.subject;
             my_year = params.year;
             
-            let file_name_lesson = my_year + "_" + my_grade + ".json"
-            let url_file_name_lesson = url_json_database_folder + file_name_lesson;
+            let file_name_lesson = my_grade + ".json";
+            let url_file_name_lesson = url_json_database_folder + my_year + "/" + file_name_lesson;
 
             //console.log("load url_file_name_lesson= " + url_file_name_lesson);
 
