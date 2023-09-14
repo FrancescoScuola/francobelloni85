@@ -168,8 +168,7 @@
 
     <script>
 
-                $(document).ready(function () {
-
+            $(document).ready(function () {
 
             // https://stackoverflow.com/questions/901115/how-can-i-get-query-string-values-in-javascript
             const params = new Proxy(new URLSearchParams(window.location.search), {
@@ -178,29 +177,13 @@
 
             my_grade = params.grade;
             my_subject = params.subject;
-            my_year = params.year;
-            
-            let file_name_lesson = my_grade + ".json";
-            let url_file_name_lesson = url_json_database_folder + my_year + "/" + file_name_lesson;
-
-            //console.log("load url_file_name_lesson= " + url_file_name_lesson);
+            my_year = params.year;           
 
             const capitalized = my_subject.charAt(0).toUpperCase() + my_subject.slice(1);
             $('#grade_title').text(my_grade);
-            $('#subject_title').text(capitalized);
+            $('#subject_title').text(capitalized);            
 
-            try {
-
-                // console.log("loading resources with getJSON");
-
-                $.getJSON(url_file_name_lesson, function (data, status) {
-                    json_lesson_response = data;
-                    status_fetch = status;                    
-                });
-
-            } catch (ex) {
-                console.log(ex);
-            }
+            LoadLessonsTable(my_grade, my_subject, my_year);
 
         });
     </script>
@@ -259,23 +242,10 @@
 
 
         // Load all the lessions
+        function LoadLessonsTable(my_grade, my_subject, my_year ) { 
 
-        $(document).ready(function () {
-
-
-            // https://stackoverflow.com/questions/901115/how-can-i-get-query-string-values-in-javascript
-            const params = new Proxy(new URLSearchParams(window.location.search), {
-                get: (searchParams, prop) => searchParams.get(prop),
-            });
-
-            my_grade = params.grade;
-            my_subject = params.subject;
-            my_year = params.year;
-
-            let file_name_lesson = my_year + "_" + my_grade + ".json"
-            let url_file_name_lesson = url_json_database_folder + file_name_lesson;
-
-            //console.log("load url_file_name_lesson= " + url_file_name_lesson);
+            let file_name_lesson = my_grade + ".json";
+            let url_file_name_lesson = url_json_database_folder + my_year + "/" + file_name_lesson;
 
             const capitalized = my_subject.charAt(0).toUpperCase() + my_subject.slice(1);
             $('#grade_title').text(my_grade);
@@ -316,7 +286,9 @@
                 console.log(ex);
             }
 
-        });
+
+        }
+
 
         function LoadLessionClick(index_lesson) {
 
