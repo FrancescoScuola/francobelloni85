@@ -125,5 +125,17 @@
       "Surname": "Zoc",
       "Id": 25
     }
+  ],
+  "matchs": [
+    {
+      "student1_id": 2,
+      "question1": "Come si può combattere l'attenuazione",
+      "score_1": 8,
+      "student2_id": 7,
+      "question2": "Cosa succede se la banda è sottile?",
+      "score_2": 14,
+      "winner": 7,
+      "date": "13/09/2023"
+    }
   ]
 }
