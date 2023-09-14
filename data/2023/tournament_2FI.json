@@ -100,5 +100,17 @@
       "Surname": "RIZ",
       "Id": 20
     }
+  ],
+  "matchs": [
+    {
+      "student1_id": 14,
+      "question1": "A cosa serve il Fortran?",
+      "score_1": 10,
+      "student2_id": 6,
+      "question2": "Per cosa è stato inventato L'ENIAC?",
+      "score_2": 5,
+      "winner": 14,
+      "date": "13/09/2023"
+    }
   ]
 }
