@@ -1,11 +1,11 @@
 {
   "lessons": [
     {
-      "date": "12/09/2023",
-      "title": "Introduzione",
-      "text": "1_introduzione.html",
-      "text_made_by": "francesco",
-      "questions": "1_introduzione_questions.json"
+      "date": "13/09/2023",
+      "title": "Lo schema del sistema di comunicazione",
+      "text": "1.html",
+      "text_made_by": "PENAFIEL",
+      "questions": "1_q.json"
     },
     {
       "date": "15/09/2023",
