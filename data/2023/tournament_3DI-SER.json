@@ -130,6 +130,18 @@
       "Surname": "SAV",
       "Id": 26
     }
+  ],
+  "matchs": [
+  {
+    "student1_id": 10,
+    "question1": "Esponi cosa è il sistema sequenziale",
+    "score_1": 15,
+    "student2_id": 24,
+    "question2": "Differenza tra combinatorio e sequenziale",
+    "score_2": 7,
+    "winner": 10,
+    "date": "15/09/2023"
+  }
   ]
 
 }
