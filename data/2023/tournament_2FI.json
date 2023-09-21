@@ -111,6 +111,16 @@
       "score_2": 5,
       "winner": 14,
       "date": "13/09/2023"
+    },
+    {
+      "student1_id": 1,
+      "question1": "Elenca gli editor di testo di python?",
+      "score_1": 5,
+      "student2_id": 17,
+      "question2": "Cosa sono e cosa servono i sistemi di controllo di versione?",
+      "score_2": 14,
+      "winner": 17,
+      "date": "19/09/2023"
     }
   ]
 }

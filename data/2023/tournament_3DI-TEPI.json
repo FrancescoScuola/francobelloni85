@@ -132,15 +132,25 @@
     }
   ],
     "matchs": [
-    {
-      "student1_id": 23,
-      "question1": "Cosa usiamo per evitare l'attenuazione",
-      "score_1": 8,
-      "student2_id": 24,
-      "question2": "Cosa è la larghezza di banda",
-      "score_2": 12,
-      "winner": 24,
-      "date": "13/09/2023"
-    }
+      {
+        "student1_id": 23,
+        "question1": "Cosa usiamo per evitare l'attenuazione",
+        "score_1": 8,
+        "student2_id": 24,
+        "question2": "Cosa è la larghezza di banda",
+        "score_2": 12,
+        "winner": 24,
+        "date": "13/09/2023"
+      },
+      {
+        "student1_id": 12,
+        "question1": "Come si può ridurre la distorsione?",
+        "score_1": 5,
+        "student2_id": 14,
+        "question2": "quali e quali sono i tipi di trasmissione?",
+        "score_2": 15,
+        "winner": 14,
+        "date": "20/09/2023"
+      }
     ]
 }

@@ -136,6 +136,16 @@
       "score_2": 14,
       "winner": 7,
       "date": "13/09/2023"
+    },
+    {
+      "student1_id": 16,
+      "question1": "come si può ridurre la distorsione?",
+      "score_1": 3,
+      "student2_id": 17,
+      "question2": "quando si verifica la distorsione?",
+      "score_2": 19,
+      "winner": 17,
+      "date": "20/09/2023"
     }
   ]
 }
