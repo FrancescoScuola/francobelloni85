@@ -13,6 +13,20 @@
       "text": "2.html",
       "text_made_by": "De Molli",
       "questions": "2_q.json"
+    },
+    {
+      "date": "23/09/2023",
+      "title": "Seriale Vs Parallelo",
+      "text": "3.html",
+      "text_made_by": "De Molli",
+      "questions": "3_q.json"
+    },
+    {
+      "date": "27/09/2023",
+      "title": "Il Codice",
+      "text": "4.html",
+      "text_made_by": "Capone",
+      "questions": "4_q.json"
     }
   ]
 }  

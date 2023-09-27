@@ -13,6 +13,13 @@
       "text": "2.html",
       "text_made_by": "Montorio Ivan",
       "questions": "2_q.json"
+    },
+    {
+      "date": "22/09/2023",
+      "title": "Parallelo vs Seriale",
+      "text": "3.html",
+      "text_made_by": "Zoccarato matteo",
+      "questions": "3_q.json"
     }
   ]
 }  
