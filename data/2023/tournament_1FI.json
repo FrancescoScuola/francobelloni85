@@ -96,24 +96,61 @@
       "Id": 19
     },
     {
+      "Name": "Saracin",
+      "Surname": "RAF",
+      "Id": 20
+    },
+    {
       "Name": "Denis",
       "Surname": "SMA",
-      "Id": 20
+      "Id": 21
     },
     {
       "Name": "Ishmael",
       "Surname": "UMA",
-      "Id": 21
+      "Id": 22
     },
     {
       "Name": "Diego",
       "Surname": "ZAN",
-      "Id": 22
+      "Id": 23
     },
     {
       "Name": "Leonard",
       "Surname": "ZAV",
-      "Id": 23
+      "Id": 24
+    }
+  ],  
+  "matchs": [
+    {
+      "student1_id": 4,
+      "question1": "Scena muta :|",
+      "score_1": 10,
+      "student2_id": 8,
+      "question2": "attraverso cosa un computer esegue le istruzioni eseguite dall’utente?",
+      "score_2": 5,
+      "winner": 8,
+      "date": "23/09/2023"
+    },
+    {
+      "student1_id": 20,
+      "question1": "mmm qualcosa su Modello Von Neumann",
+      "score_1": 10,
+      "student2_id": 1,
+      "question2": "mmm qualcosa su Modello Von Neumann",
+      "score_2": 11,
+      "winner": 1,
+      "date": "30/09/2023"
+    },
+    {
+      "student1_id": 16,
+      "question1": "A COSA SERVE IL FIRMWARE? È MODIFICABILE?",
+      "score_1": 11,
+      "student2_id": 24,
+      "question2": "Cosa è la scheda video?",
+      "score_2": 6,
+      "winner": 16,
+      "date": "30/09/2023"
     }
   ]
 }

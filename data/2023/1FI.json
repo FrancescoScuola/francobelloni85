@@ -1,18 +1,46 @@
 {
   "lessons": [
     {
-      "date": "23/09/2023",
+      "date": "16/09/2023",
       "title": "Campi di applicazione dell'informatica",
       "text": "1.html",
-      "text_made_by": "de prisco irene",
+      "text_made_by": "Pippo",
       "questions": "1_q.json"
     },
     {
-      "date": "15/09/2023",
-      "title": "Tipi di computer",
+      "date": "18/09/2023",
+      "title": "Classificazione dei computer ",
       "text": "2.html",
-      "text_made_by": "francesco",
+      "text_made_by": "Pippo",
       "questions": "2_q.json"
+    },
+    {
+      "date": "23/09/2023",
+      "title": "Pc, server e supercomputer, programma e istruzione macchina ",
+      "text": "3.html",
+      "text_made_by": "De prisco irene",
+      "questions": "2_q.json"
+    },
+    {
+      "date": "30/09/2023",
+      "title": "Modello Von Neumann",
+      "text": "4.html",
+      "text_made_by": "SARACINO",
+      "questions": "4_q.json"
+    },
+    {
+      "date": "30/09/2023",
+      "title": "Dentro al pc (scheda madre/...), introduzione CPU",
+      "text": "5.html",
+      "text_made_by": "ZAVAGLIA",
+      "questions": "5_q.json"
+    },
+    {
+      "date": "30/09/2023",
+      "title": "La CPU",
+      "text": "6.html",
+      "text_made_by": "Pippo",
+      "questions": "6_q.json"
     }
   ]
 }  
