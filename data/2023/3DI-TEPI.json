@@ -27,6 +27,37 @@
       "text": "4.html",
       "text_made_by": "Capone",
       "questions": "4_q.json"
+    },
+    {
+      "date": "30/09/2023",
+      "title": "GLI ELEMENTI CARATTERISTICI DI UN CODICE / BIT, BYTE, NIBBLE, WORD",
+      "text": "5.html",
+      "text_made_by": "Pippo",
+      "questions": "5_q.json"
+    }
+    ,
+    {
+      "date": "04/10/2023",
+      "title": "Notazione esadecimale ",
+      "text": "6.html",
+      "text_made_by": "Pippo",
+      "questions": "6_q.json"
+    }
+    ,
+    {
+      "date": "11/10/2023",
+      "title": "Rappresentazione del testo - unicode",
+      "text": "7.html",
+      "text_made_by": "CASTAGNA DANIEL",
+      "questions": "4_q.json"
+    }
+    ,
+    {
+      "date": "14/10/2023",
+      "title": "Problemi Comuni con le Codifiche",
+      "text": "8.html",
+      "text_made_by": "Pippo",
+      "questions": "8_q.json"
     }
   ]
 }  

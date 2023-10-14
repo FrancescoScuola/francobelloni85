@@ -152,5 +152,26 @@
         "winner": 14,
         "date": "20/09/2023"
       }
+      ,
+      {
+        "student1_id": 12,
+        "question1": "Differenza tra broadcast e multipunto?",
+        "score_1": 6,
+        "student2_id": 2,
+        "question2": "Caratteristiche della trasmissione in parallelo?",
+        "score_2": 12,
+        "winner": 2,
+        "date": "23/09/2023"
+      },
+      {
+        "student1_id": 6,
+        "question1": "Quali sono le 3 modalità di comunicazione? E quali sono le differenze?",
+        "score_1": 8,
+        "student2_id": 19,
+        "question2": "Quali sono i 3 elementi del codice?",
+        "score_2": 15,
+        "winner": 15,
+        "date": "27/09/2023"
+      }
     ]
 }

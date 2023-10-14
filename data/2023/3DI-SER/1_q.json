@@ -1,25 +1,31 @@
 {
   "questions": [
     {
-      "text": "..."
+      "text": "Qual è la differenza tra sistemi compilatori e sequenziali?"
     },
     {
-      "text": "..."
+      "text": "Quali sono i tipi di sistema aperto?"
     },
     {
-      "text": "..."
+      "text": "Cos'è un sistema? Elenca tre sistemi aperti."
     },
     {
-      "text": "..."
+      "text": "Come vengono definiti i sistemi dinamici, discreti e invariabili?"
     },
     {
-      "text": "..."
+      "text": "Cos'è un sistema aperto?"
     },
     {
-      "text": "..."
+      "text": "Cosa rappresenta il sigma?"
     },
     {
-      "text": "..."
+      "text": "Cos'è una funzione di transizione?"
+    },
+    {
+      "text": "Perché l'automa è definito a stati finiti?"
+    },
+    {
+      "text": "Cos'è l'insieme di stati in un automa finito?"
     }
   ]
 }
