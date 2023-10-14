@@ -2,24 +2,62 @@
   "lessons": [
     {
       "date": "13/09/2023",
-      "title": "Lo schema del sistema di comunicazione",
+      "title": "01 - Lo schema del sistema di comunicazione",
       "text": "1.html",
       "text_made_by": "ARSHAD ALI FAHAD",
       "questions": "1_q.json"
     },
     {
       "date": "15/09/2023",
-      "title": "Caratteristiche del canale trasmissivo",
+      "title": "02 - Caratteristiche del canale trasmissivo",
       "text": "2.html",
       "text_made_by": "Montorio Ivan",
       "questions": "2_q.json"
     },
     {
       "date": "22/09/2023",
-      "title": "Parallelo vs Seriale",
+      "title": "03 - Parallelo vs Seriale",
       "text": "3.html",
       "text_made_by": "Zoccarato matteo",
       "questions": "3_q.json"
+    }
+    ,
+    {
+      "date": "26/09/2023",
+      "title": "04 - Trasmissione dei dati: punto-punto / broadcast / rete a stella",
+      "text": "4.html",
+      "text_made_by": "Pippo",
+      "questions": "4_q.json"
+    }
+    ,
+    {
+      "date": "27/09/2023",
+      "title": "05 - Codifica dei dati",
+      "text": "5.html",
+      "text_made_by": "Torniero",
+      "questions": "5_q.json"
+    },
+    {
+      "date": "04/10/2023",
+      "title": "06 - Come si costruisce un codice",
+      "text": "6.html",
+      "text_made_by": "Pippo",
+      "questions": "6_q.json"
+    },
+    {
+      "date": "04/10/2023",
+      "title": "07 - Bit, Byte, Nibble e Word. Big/Little indian",
+      "text": "7.html",
+      "text_made_by": "Torniero",
+      "questions": "7_q.json"
+    }
+    ,
+    {
+      "date": "04/10/2023",
+      "title": "08 - notazione esadecimale e le sue conversioni",
+      "text": "8.html",
+      "text_made_by": "Pippo",
+      "questions": "8_q.json"
     }
   ]
 }  

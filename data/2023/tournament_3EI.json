@@ -139,13 +139,43 @@
     },
     {
       "student1_id": 16,
-      "question1": "come si può ridurre la distorsione?",
+      "question1": "Come si può ridurre la distorsione?",
       "score_1": 3,
       "student2_id": 17,
-      "question2": "quando si verifica la distorsione?",
+      "question2": "Quando si verifica la distorsione?",
       "score_2": 19,
       "winner": 17,
       "date": "20/09/2023"
+    },
+    {
+      "student1_id": 25,
+      "question1": "Caratteristiche della porta parallela?",
+      "score_1": 9,
+      "student2_id": 9,
+      "question2": "Qual è la tecnologia della porta usb?",
+      "score_2": 10,
+      "winner": 9,
+      "date": "22/09/2023"
+    },
+    {
+      "student1_id": 16,
+      "question1": "Cos’è il metodo di codifica Half duplex?",
+      "score_1": 12,
+      "student2_id": 24,
+      "question2": "Che cosa è il full duplex?",
+      "score_2": 7,
+      "winner": 16,
+      "date": "27/09/2023"
+    },
+    {
+      "student1_id": 24,
+      "question1": "Spiega la differenza tra byte e nibble",
+      "score_1": 8,
+      "student2_id": 18,
+      "question2": "Cosa è il bit?",
+      "score_2": 12,
+      "winner": 18,
+      "date": "10/10/2023"
     }
   ]
 }
