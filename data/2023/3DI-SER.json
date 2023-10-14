@@ -2,17 +2,65 @@
   "lessons": [
     {
       "date": "15/09/2023",
-      "title": "Introduzione",
+      "title": "Introduzione ai sistemi",
       "text": "1.html",
       "text_made_by": "Piscioneri",
       "questions": "1_q.json"
     },
     {
-      "date": "15/09/2023",
-      "title": "Campi di applicazione dell'informatica",
-      "text": "2_informatica_e_i_suoi_strumenti.html",
-      "text_made_by": "francesco",
-      "questions": "2_informatica_e_i_suoi_strumenti_questions.json"
+      "date": "19/09/2023",
+      "title": "Automi",
+      "text": "2.html",
+      "text_made_by": "Pippo",
+      "questions": "2_q.json"
+    },
+    {
+      "date": "22/09/2023",
+      "title": "Esercizi automi",
+      "text": "3.html",
+      "text_made_by": "Pippo",
+      "questions": "3_q.json"
     }
+    ,
+    {
+      "date": "26/09/2023",
+      "title": "Il modello di von neumann",
+      "text": "4.html",
+      "text_made_by": "Pippo",
+      "questions": "4_q.json"
+    }
+    ,
+    {
+      "date": "29/09/2023",
+      "title": "Modello di harvard",
+      "text": "5.html",
+      "text_made_by": "Pippo",
+      "questions": "5_q.json"
+    }
+    ,
+    {
+      "date": "06/10/2023",
+      "title": "Correzione esercizio, von neumann vs harvard",
+      "text": "6.html",
+      "text_made_by": "Pippo",
+      "questions": "6_q.json"
+    }
+    ,
+    {
+      "date": "10/10/2023",
+      "title": "Correzione compiti, Introduzione CPU",
+      "text": "7.html",
+      "text_made_by": "Pippo",
+      "questions": "7_q.json"
+    }
+    ,
+    {
+      "date": "13/10/2023",
+      "title": "Esercizio automi a stati finiti, il microprocessore",
+      "text": "8.html",
+      "text_made_by": "Pippo",
+      "questions": "8_q.json"
+    }
+
   ]
 }  
