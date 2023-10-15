@@ -1,18 +1,39 @@
 {
   "lessons": [
     {
-      "date": "12/09/2023",
-      "title": "Introduzione",
-      "text": "1_introduzione.html",
-      "text_made_by": "francesco",
-      "questions": "1_introduzione_questions.json"
+      "date": "26/09/2023",
+      "title": "01 - Hardware delle Reti",
+      "text": "1.html",
+      "text_made_by": "Pippo",
+      "questions": "1_q.html"
     },
     {
-      "date": "15/09/2023",
-      "title": "Campi di applicazione dell'informatica",
-      "text": "2_informatica_e_i_suoi_strumenti.html",
-      "text_made_by": "francesco",
-      "questions": "2_informatica_e_i_suoi_strumenti_questions.json"
+      "date": "30/09/2023",
+      "title": "02 - Tipi di LAN (bus/anello/completamente connessa/stella)",
+      "text": "2.html",
+      "text_made_by": "Pippo",
+      "questions": "2_q.html"
+    },
+    {
+      "date": "07/10/2023",
+      "title": "03 - Modalità di Trasmissione: Simplex, Half-Duplex, Full-Duplex",
+      "text": "3.html",
+      "text_made_by": "Pippo",
+      "questions": "3_q.html"
+    },
+    {
+      "date": "10/10/2023",
+      "title": "04 - Modalità di trasmissione / tipi di comunicazione",
+      "text": "4.html",
+      "text_made_by": "Pippo",
+      "questions": "4_q.html"
+    },
+    {
+      "date": "14/10/2023",
+      "title": "05 - Reti e pile protocollari",
+      "text": "5.html",
+      "text_made_by": "Pippo",
+      "questions": "5_q.html"
     }
   ]
-}  
+}

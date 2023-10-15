@@ -2,35 +2,35 @@
   "lessons": [
     {
       "date": "13/09/2023",
-      "title": "Lo schema del sistema di comunicazione",
+      "title": "01 - Lo schema del sistema di comunicazione",
       "text": "1.html",
       "text_made_by": "PENAFIEL",
       "questions": "1_q.json"
     },
     {
       "date": "20/09/2023",
-      "title": "Caratteristiche del canale trasmissivo",
+      "title": "02 - Caratteristiche del canale trasmissivo",
       "text": "2.html",
       "text_made_by": "De Molli",
       "questions": "2_q.json"
     },
     {
       "date": "23/09/2023",
-      "title": "Seriale Vs Parallelo",
+      "title": "03 - Seriale Vs Parallelo",
       "text": "3.html",
       "text_made_by": "De Molli",
       "questions": "3_q.json"
     },
     {
       "date": "27/09/2023",
-      "title": "Il Codice",
+      "title": "04 - Il Codice",
       "text": "4.html",
       "text_made_by": "Capone",
       "questions": "4_q.json"
     },
     {
       "date": "30/09/2023",
-      "title": "GLI ELEMENTI CARATTERISTICI DI UN CODICE / BIT, BYTE, NIBBLE, WORD",
+      "title": "05 - GLI ELEMENTI CARATTERISTICI DI UN CODICE / BIT, BYTE, NIBBLE, WORD",
       "text": "5.html",
       "text_made_by": "Pippo",
       "questions": "5_q.json"
@@ -38,7 +38,7 @@
     ,
     {
       "date": "04/10/2023",
-      "title": "Notazione esadecimale ",
+      "title": "06 - Notazione esadecimale ",
       "text": "6.html",
       "text_made_by": "Pippo",
       "questions": "6_q.json"
@@ -46,7 +46,7 @@
     ,
     {
       "date": "11/10/2023",
-      "title": "Rappresentazione del testo - unicode",
+      "title": "07 - Rappresentazione del testo - unicode",
       "text": "7.html",
       "text_made_by": "CASTAGNA DANIEL",
       "questions": "4_q.json"
@@ -54,7 +54,7 @@
     ,
     {
       "date": "14/10/2023",
-      "title": "Problemi Comuni con le Codifiche",
+      "title": "08 - Problemi Comuni con le Codifiche",
       "text": "8.html",
       "text_made_by": "Pippo",
       "questions": "8_q.json"
