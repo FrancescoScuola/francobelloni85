@@ -1,9 +1,8 @@
-# ✨ ISIS Keynes Gazzada Schianno (Informatica) ✨ 
+# ✨ ISIS Keynes Gazzada Schianno (Informatica) ✨
 
-### Repository con l'indice del materiale scolastico e diario della classe
+## Repository con l'indice del materiale scolastico e diario della classe
 
-Il sito live è raggiungibile all'indirizzo: https://francobelloni85.github.io/francobelloni85/index.html
-
+⚡ Il sito live è raggiungibile all'indirizzo: https://francobelloni85.github.io/francobelloni85/index.html
 
 <!--
 **francobelloni85/francobelloni85** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
