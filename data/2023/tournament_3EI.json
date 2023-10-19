@@ -176,6 +176,16 @@
       "score_2": 12,
       "winner": 18,
       "date": "10/10/2023"
+    },
+    {
+      "student1_id": 15,
+      "question1": "Perché nasce e cosa è Unicode?",
+      "score_1": 15,
+      "student2_id": 1,
+      "question2": "Perché esadecimale è migliore del codice binario e quali sono i suoi vantaggi?",
+      "score_2": 5,
+      "winner": 15,
+      "date": "17/10/2023"
     }
   ]
 }

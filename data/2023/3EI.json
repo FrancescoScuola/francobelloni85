@@ -20,16 +20,14 @@
       "text": "3.html",
       "text_made_by": "Zoccarato matteo",
       "questions": "3_q.json"
-    }
-    ,
+    },
     {
       "date": "26/09/2023",
       "title": "04 - Trasmissione dei dati: punto-punto / broadcast / rete a stella",
       "text": "4.html",
       "text_made_by": "Pippo",
       "questions": "4_q.json"
-    }
-    ,
+    },
     {
       "date": "27/09/2023",
       "title": "05 - Codifica dei dati",
@@ -50,14 +48,20 @@
       "text": "7.html",
       "text_made_by": "Torniero",
       "questions": "7_q.json"
-    }
-    ,
+    },
     {
       "date": "04/10/2023",
       "title": "08 - notazione esadecimale e le sue conversioni",
       "text": "8.html",
       "text_made_by": "Pippo",
       "questions": "8_q.json"
+    },
+    {
+      "date": "17/10/2023",
+      "title": "09 - Unicode",
+      "text": "9.html",
+      "text_made_by": "Ambrosini",
+      "questions": "9_q.json"
     }
   ]
 }  
